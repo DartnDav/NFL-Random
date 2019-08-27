@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TeamsComponent } from './teams/teams.component';
 
+import { NFLRandomConfig } from './../../config/nflrandom.config';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,9 @@ import { TeamsComponent } from './teams/teams.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    NFLRandomConfig
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

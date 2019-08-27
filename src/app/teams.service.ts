@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 
+import { NFLRandomConfig } from './../../config/nflrandom.config';
+
 @Injectable({
   providedIn: 'root'
 })
 export class TeamsService {
 
-  constructor() { }
+  constructor(private NFLRandomConfig: NFLRandomConfig) { }
   getTeams(): string {
-    return 'Hello World';
+    return this.NFLRandomConfig.key;
   }
 }
