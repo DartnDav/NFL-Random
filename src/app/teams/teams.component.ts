@@ -12,7 +12,10 @@ export class TeamsComponent implements OnInit {
   constructor(private teamsService: TeamsService) { }
 
   ngOnInit() {
-    console.log(this.teamsService.getTeams());
+    this.teamsService.getTeams().subscribe(
+      (response: any) => {
+        console.log(response);
+      }
+    );
   }
-
 }

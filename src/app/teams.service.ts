@@ -1,4 +1,9 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+import { Observable } from 'rxjs';
+
+import { Teams } from './models/teams';
 
 import { NFLRandomConfig } from './../../config/nflrandom.config';
 
@@ -7,8 +12,16 @@ import { NFLRandomConfig } from './../../config/nflrandom.config';
 })
 export class TeamsService {
 
-  constructor(private NFLRandomConfig: NFLRandomConfig) { }
-  getTeams(): string {
-    return this.NFLRandomConfig.key;
+  private url: string
+
+  constructor(
+    private http: HttpClient,
+    private NFLRandomConfig: NFLRandomConfig
+  ) {
+    this.url = `https://api.sportsdata.io/v3/nfl/scores/json/Teams/2019REG?key=${this.NFLRandomConfig.key}`;
+  }
+
+  getTeams(): Observable<Teams> {
+    return this.http.get<Teams>(this.url);
   }
 }
