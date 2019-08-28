@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TeamsService } from '../teams.service';
+import { TeamService } from '../team.service';
 import { Teams } from '../models/teams';
+import { Team } from '../models/team';
 
 @Component({
   selector: 'app-teams',
@@ -15,6 +17,7 @@ export class TeamsComponent implements OnInit {
 
   constructor(
     private teamsService: TeamsService,
+    private teamService: TeamService,
     private router: ActivatedRoute
   ) { }
 

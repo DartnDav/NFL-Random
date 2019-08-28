@@ -4,12 +4,14 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { Teams } from './models/teams';
+import { Team } from './models/team';
 
 import { NFLRandomConfig } from './../../config/nflrandom.config';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class TeamsService {
 
   private url: string
