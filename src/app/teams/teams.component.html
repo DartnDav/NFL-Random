@@ -1,1 +1,8 @@
-<p>teams works!</p>
+<h1>Teams</h1>
+<ul class="teams_list" *ngIf="teams">
+    <li *ngFor="let team of teams">
+        <a><img width="50" src="{{team.WikipediaLogoUrl}}"></a>
+        <a><img width="60" src="{{team.WikipediaWordMarkUrl}}"></a><br>
+        <a>{{team.Conference}} {{team.Division}}</a><br><br>
+    </li>
+</ul>

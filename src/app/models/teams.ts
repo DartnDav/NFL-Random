@@ -1,7 +1,6 @@
 export class Teams {
     Key: string;
     TeamID: string;
-    PlayerID: string;
     City: string;
     Name: string;
     Conference: string;
@@ -9,21 +8,12 @@ export class Teams {
     FullName: string;
     StadiumID: string;
     ByeWeek: string;
-    AverageDraftPosition: string;
-    AverageDraftPositionPPR: string;
     HeadCoach: string;
     OffensiveCoordinator: string;
     DefensiveCoordinator: string;
     SpecialTeamsCoach: string;
     OffensiveScheme: string;
     DefensiveScheme: string;
-    UpcomingSalary: string;
-    UpcomingOpponent: string;
-    UpcomingOpponentRank: string;
-    UpcomingOpponentPositionRank: string;
-    UpcomingFanDuelSalary: string;
-    UpcomingDraftKingsSalary: string;
-    UpcomingYahooSalary: string;
     PrimaryColor: string;
     SecondaryColor: string;
     TertiaryColor: string;
@@ -31,16 +21,6 @@ export class Teams {
     WikipediaLogoUrl: string;
     WikipediaWordMarkUrl: string;
     GlobalTeamID: string;
-    DraftKingsName: string;
-    DraftKingsPlayerID: string;
-    FanDuelName: string;
-    FanDuelPlayerID: string;
-    FantasyDraftName: string;
-    FantasyDraftPlayerID: string;
-    YahooName: string;
-    YahooPlayerID: string;
-    AverageDraftPosition2QB: string;
-    AverageDraftPositionDynasty: string;
     StadiumDetails: {
         StadiumID: string;
         Name: string;
