@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { TeamsComponent } from './teams/teams.component';
 
 import { NFLRandomConfig } from './../../config/nflrandom.config';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TeamsComponent
+    TeamsComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
