@@ -23,7 +23,7 @@ export class TeamsService {
     this.url = `https://api.sportsdata.io/v3/nfl/scores/json/Teams/2019REG?key=${this.NFLRandomConfig.key}`;
   }
 
-  getTeams(): Observable<Teams[]> {
-    return this.http.get<Teams[]>(this.url);
+  getTeams(): Observable<Teams> {
+    return this.http.get<Teams>(this.url);
   }
 }

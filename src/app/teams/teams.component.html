@@ -1,7 +1,7 @@
 <h1>Teams</h1>
 <ul class="teams_list" *ngIf="teams">
     <li *ngFor="let team of teams">
-        <a style=display:none;>{{team.TeamID}}</a>
+        <!-- <a style=display:none;>{{team.TeamID}}</a> -->
         <a><img width="50" src="{{team.WikipediaLogoUrl}}"></a>
         <a><img width="60" src="{{team.WikipediaWordMarkUrl}}"></a><br>
         <a>{{team.Conference}} {{team.Division}}</a><br>
@@ -10,7 +10,7 @@
     </li>
 </ul>
 
-<div id="team_list1">T</div>
+<!-- <div id="team_list1">T!</div> -->
 <!-- console.log(team1); -->
 <!-- <script>
     var team1 = document.getElementsByClassName("teams_list");

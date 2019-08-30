@@ -21,11 +21,6 @@ export class TeamsComponent implements OnInit {
     private router: ActivatedRoute
   ) { }
 
-  // ngOnInit() {
-  //   this.teamsService.getTeams().subscribe(
-  //     (response: any) => {
-  //       console.log(response);
-
   ngOnInit() {
     this.getTeams();
   }

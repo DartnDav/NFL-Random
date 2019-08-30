@@ -1,1 +1,11 @@
-<p>team works!</p>
+<h1>Team</h1>
+<ul class="team_list" *ngIf="team">
+    <li *ngFor="let team of team">
+        <!-- <a style=display:none;>{{team.TeamID}}</a> -->
+        <a><img width="50" src="{{team.WikipediaLogoUrl}}"></a>
+        <a><img width="60" src="{{team.WikipediaWordMarkUrl}}"></a><br>
+        <a>{{team.Conference}} {{team.Division}}</a><br>
+        <button>View team details</button>
+        <br><br>
+    </li>
+</ul>

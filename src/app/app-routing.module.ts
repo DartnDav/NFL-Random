@@ -7,8 +7,9 @@ import { TeamComponent } from './team/team.component';
 const routes: Routes = [
   { path: '', redirectTo: '/teams', pathMatch: 'full' },
   { path: 'teams', component: TeamsComponent },
-  { path: '', redirectTo: '/team', pathMatch: 'full' },
-  { path: 'team', component: TeamComponent }
+  { path: 'teams/:key', component: TeamsComponent },
+  { path: 'team', component: TeamComponent },
+  { path: 'team/:key', component: TeamComponent }
 ];
 
 @NgModule({
